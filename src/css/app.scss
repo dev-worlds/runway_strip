@@ -4,3 +4,21 @@
 }
 
 /* Your app custom styles here */
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.hide-input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  border: none;
+  visibility: hidden;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

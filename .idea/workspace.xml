@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ff809e1-6e12-4285-ba42-a5001c966d8d" name="Changes" comment="" />
+    <list default="true" id="5ff809e1-6e12-4285-ba42-a5001c966d8d" name="Changes" comment="init project">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/app.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/404.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/about.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/dynamic-route.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/form.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/request-and-load.vue" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,10 +24,14 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2FHASbVHm4JqdsEwoNhojlxq8Jl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="showExcludedFiles" value="false" />
@@ -24,11 +42,39 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/runway_strip",
+    "last_opened_file_path": "D:/OpenServer/domains/pkrf_bm",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager" selected="npm.cordova-electron-prod">
+    <configuration name="cordova-electron-prod" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="cordova-electron-prod" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="cordova-electron" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="cordova-electron" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.cordova-electron-prod" />
+        <item itemvalue="npm.cordova-electron" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -37,11 +83,34 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1664138637099</updated>
-      <workItem from="1664138638602" duration="931000" />
+      <workItem from="1664138638602" duration="7808000" />
     </task>
+    <task id="LOCAL-00001" summary="init project">
+      <created>1664139802862</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664139802862</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init project" />
+    <option name="LAST_COMMIT_MESSAGE" value="init project" />
   </component>
 </project>
