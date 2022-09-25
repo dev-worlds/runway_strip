@@ -1,0 +1,27 @@
+{
+  "cwd": "D:\\runway_strip",
+  "type": [
+    "cordova"
+  ],
+  "name": "runway_strip",
+  "framework": "vue",
+  "template": "single-view",
+  "bundler": "vite",
+  "cssPreProcessor": "scss",
+  "theming": {
+    "customColor": false,
+    "color": "#007aff",
+    "darkTheme": false,
+    "iconFonts": true,
+    "fillBars": false
+  },
+  "customBuild": false,
+  "pkg": "io.framework7.runway_strip",
+  "cordova": {
+    "folder": "cordova",
+    "platforms": [
+      "electron"
+    ],
+    "plugins": []
+  }
+}
