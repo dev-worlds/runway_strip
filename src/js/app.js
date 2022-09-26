@@ -15,7 +15,7 @@ import '../css/icons.css';
 import '../css/app.scss';
 
 // Import App Component
-import App from '../components/app.vue';
+import App from '../app.vue';
 
 // Init Framework7-Vue Plugin
 Framework7.use(Framework7Vue);

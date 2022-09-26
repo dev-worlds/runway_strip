@@ -1,11 +1,8 @@
 <template>
   <f7-page name="home">
-    <!-- Top Navbar -->
     <f7-navbar :sliding="false">
       <f7-nav-title>runway_strip</f7-nav-title>
     </f7-navbar>
-    <!-- Toolbar-->
-
 
     <f7-list inline-labels no-hairlines-md class="list">
       <f7-list-item
@@ -19,6 +16,7 @@
               class="hide-input file"
               ref="inputFile"
               @change="handleInputFile"
+              :disabled="isLoading"
           />
           <label for="inputFile" class="cursor-pointer label-file">
             {{ nameFile }}
@@ -41,6 +39,7 @@
 
 <script>
 import readXlsxFile from 'read-excel-file'
+import {f7, f7ready} from "framework7-vue";
 
 export default {
   data() {
@@ -48,22 +47,33 @@ export default {
       inputFile: null,
       isLoading: false,
       isDisabled: true,
-      nameFile: 'Файл не выбран'
+      nameFile: 'Файл не выбран',
+      fileData: []
     }
   },
+
   mounted() {
-    if (this.$refs.inputFile) {
-      this.inputFile = this.$refs.inputFile;
-    }
+    f7ready(() => {
+      if (this.$refs.inputFile) {
+        this.inputFile = this.$refs.inputFile;
+      }
+      // f7.dialog.alert('Hello', () => {
+      //   f7.loginScreen.close();
+      // });
+    });
   },
 
   methods: {
     loadFileData() {
       this.isLoading = true;
-      readXlsxFile(this.inputFile.files[0]).then((rows) => {
-        // this.isLoading = false;
-        this.workFileData(rows)
-      })
+      if (this.inputFile.files.length) {
+        readXlsxFile(this.inputFile.files[0]).then((rows) => {
+          // this.isLoading = false;
+          this.workFileData(rows)
+        })
+      } else {
+        this.isLoading = false;
+      }
     },
 
     handleInputFile() {
@@ -71,8 +81,13 @@ export default {
       this.nameFile = this.inputFile.files[0]?.name || 'Файл не выбран'
     },
 
+    /**
+     * @param {Array} data
+     */
     workFileData(data) {
-      console.log(data)
+      const index = 5;
+      this.fileData = data.slice(index, data.length);
+      console.log(this.fileData)
     }
   }
 }
